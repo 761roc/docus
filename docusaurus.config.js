@@ -1,36 +1,36 @@
-const {themes} = require('prism-react-renderer');
+const { themes } = require("prism-react-renderer");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '前端面试题库',
-  tagline: '按主题分类的前端面试题、答案与可运行示例',
-  url: 'https://example.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  favicon: 'img/logo.svg',
-  organizationName: 'local',
-  projectName: 'frontend-interview-docs',
+  title: "前端面试题库",
+  tagline: "按主题分类的前端面试题、答案与可运行示例",
+  url: "https://mianshi.iupeng.top",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  favicon: "img/logo.svg",
+  organizationName: "local",
+  projectName: "frontend-interview-docs",
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownLinks: "warn",
     },
   },
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          routeBasePath: '/docs',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/docs",
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: false,
         pages: {},
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -43,19 +43,15 @@ const config = {
       },
     },
     navbar: {
-      title: '前端面试题库',
-      items: [
-        {to: '/docs/intro', label: '题库', position: 'left'},
-      ],
+      title: "前端面试题库",
+      items: [{ to: "/docs/intro", label: "题库", position: "left" }],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: '内容入口',
-          items: [
-            {label: '开始阅读', to: '/docs/intro'},
-          ],
+          title: "内容入口",
+          items: [{ label: "开始阅读", to: "/docs/intro" }],
         },
       ],
       copyright: `Copyright ${new Date().getFullYear()} Frontend Interview Docs`,
@@ -63,7 +59,16 @@ const config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
-      additionalLanguages: ['bash', 'css', 'diff', 'git', 'http', 'json', 'tsx', 'typescript'],
+      additionalLanguages: [
+        "bash",
+        "css",
+        "diff",
+        "git",
+        "http",
+        "json",
+        "tsx",
+        "typescript",
+      ],
     },
   },
 };
