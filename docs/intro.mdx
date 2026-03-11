@@ -1,0 +1,36 @@
+---
+id: intro
+title: 前端面试题库说明
+slug: /intro
+sidebar_position: 1
+---
+
+import {TopicHero} from '@site/src/components/TopicHero';
+
+<TopicHero
+  eyebrow="Frontend Interview Handbook"
+  title="按分类浏览前端面试题"
+  description="左侧使用 Docusaurus 侧边栏承载主题分类，主区域展示题目、参考答案、代码高亮与可运行示例。当前已覆盖 CSS、JavaScript、工程化、React Native、Git。"
+  stats={[
+    {label: '主题', value: '13'},
+    {label: '题目形式', value: '问答 + 代码 + Live Demo + 难度筛选'},
+    {label: '适用场景', value: '校招 / 社招 / 一面到终面'},
+  ]}
+/>
+
+## 如何使用
+
+- 通过左侧分类切换不同知识域。
+- 每个问题块都包含：考察重点、标准答案、代码示例。
+- 每个分类页顶部都支持 `全部 / 初级 / 中级 / 高级` 难度筛选。
+- 带有运行区域的题目会在文档内部渲染示例，适合边看边验证。
+
+## 内容组织原则
+
+- **分类清晰**：每个主题按常见面试侧重点拆分。
+- **答案可落地**：避免只给结论，会补充代码与边界条件。
+- **方便扩展**：后续新增分类时，只需补充题库数据并新增一个分类文档即可挂到侧边栏。
+
+## 分类依据
+
+当前分类结构参考了 `MDN`、`web.dev`、`TypeScript`、`React`、`Vue`、`React Native`、`Node.js` 与 `Git` 官方文档的知识分层，覆盖 HTML 与浏览器、样式系统、语言基础、主流框架、工程化、性能、可访问性、测试、中间层与版本协作等高频方向。

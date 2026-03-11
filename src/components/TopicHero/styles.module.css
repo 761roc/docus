@@ -1,0 +1,45 @@
+.hero {
+  margin: 0 0 2rem;
+  padding: 2rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 28px;
+  background: var(--site-hero-bg);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  color: var(--ifm-color-primary);
+}
+
+.description {
+  margin: 0;
+  max-width: 52rem;
+  color: var(--site-secondary-text);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: var(--site-panel-muted-bg);
+}
+
+.statCard strong {
+  font-size: 1.1rem;
+}
+
+.statCard span {
+  color: var(--site-secondary-text);
+}

@@ -1,0 +1,33 @@
+.wrap {
+  margin-top: 1rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--site-panel-bg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--site-border-color);
+  background: var(--site-panel-muted-bg);
+  font-size: 0.92rem;
+  color: var(--site-text-color);
+}
+
+.badge {
+  padding: 0.16rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(207, 95, 31, 0.12);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}

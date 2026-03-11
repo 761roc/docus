@@ -1,0 +1,61 @@
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 22px;
+  background: var(--site-panel-bg);
+}
+
+.toolbarLabel {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--site-muted-text);
+}
+
+.filters,
+.focusList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.filterButton,
+.focusChip {
+  border-radius: 999px;
+  border: 1px solid var(--site-border-color);
+  background: var(--site-chip-bg);
+  color: var(--site-text-color);
+}
+
+.filterButton {
+  padding: 0.55rem 0.95rem;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.filterButton:hover {
+  transform: translateY(-1px);
+  border-color: var(--ifm-color-primary-light);
+}
+
+.active {
+  background: rgba(207, 95, 31, 0.12);
+  border-color: rgba(207, 95, 31, 0.34);
+  color: var(--ifm-color-primary-darkest);
+}
+
+.focusChip {
+  padding: 0.5rem 0.85rem;
+}
+
+@media (max-width: 996px) {
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+}

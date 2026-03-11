@@ -1,0 +1,75 @@
+.hero {
+  min-height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem min(6vw, 5rem);
+  background: var(--site-home-bg);
+}
+
+.panel {
+  padding: 2rem;
+}
+
+.kicker {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #7a4d24;
+}
+
+.description {
+  max-width: 36rem;
+  font-size: 1.08rem;
+  color: var(--site-secondary-text);
+}
+
+.actions {
+  margin-top: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 22px;
+  background: var(--site-panel-bg);
+  border: 1px solid var(--site-border-color);
+  box-shadow: var(--site-card-shadow);
+  backdrop-filter: blur(14px);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(207, 95, 31, 0.34);
+}
+
+.card h2 {
+  margin-bottom: 0.35rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--site-secondary-text);
+}
+
+@media (max-width: 996px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .panel {
+    padding: 0;
+  }
+}
