@@ -79,6 +79,33 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Vue 专题',
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'vue/index',
+          label: '总览',
+        },
+        {
+          type: 'doc',
+          id: 'vue/knowledge-points',
+          label: '常用知识点',
+        },
+        {
+          type: 'doc',
+          id: 'vue/api-usage',
+          label: 'API 用法速查',
+        },
+        {
+          type: 'doc',
+          id: 'vue/cautions',
+          label: '注意事项与常见坑',
+        },
+      ],
+    },
   ],
 };
 

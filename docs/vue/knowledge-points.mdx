@@ -1,0 +1,33 @@
+---
+title: Vue 常用知识点
+slug: /vue/knowledge-points
+sidebar_position: 2
+---
+
+# Vue 常用知识点
+
+## 1. 响应式系统
+
+- `ref`：适合基本类型，也可包对象。
+- `reactive`：适合对象类型，不建议整体解构。
+- `computed`：派生状态，避免在模板里写复杂表达式。
+- `watch` / `watchEffect`：处理副作用与异步流程。
+
+## 2. 组件通信
+
+- 父传子：`props`
+- 子传父：`emit`
+- 跨层传递：`provide/inject`
+- 跨页面或复杂共享：`Pinia`
+
+## 3. 模板与渲染
+
+- 列表渲染务必提供稳定 `key`。
+- `v-if` 与 `v-show` 根据切换频率选择。
+- 大列表结合分页、虚拟滚动与懒渲染。
+
+## 4. 路由与状态
+
+- Vue Router 做页面状态切换。
+- Pinia 承担全局业务状态。
+- 避免把所有状态都塞进全局 Store。
