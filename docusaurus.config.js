@@ -35,6 +35,27 @@ const config = {
       },
     ],
   ],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        indexDocs: true,
+        indexPages: true,
+        indexBlog: false,
+        docsRouteBasePath: "/docs",
+        language: ["en", "zh"],
+        searchBarPosition: "right",
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchResultLimits: 10,
+        removeDefaultStopWordFilter: true,
+      }),
+    ],
+  ],
   themeConfig: {
     docs: {
       sidebar: {

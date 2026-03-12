@@ -26,6 +26,9 @@
     radial-gradient(circle at bottom right, rgba(20, 112, 255, 0.2), transparent 24%),
     linear-gradient(135deg, #f8f5ef 0%, #eef4ff 45%, #fffaf4 100%);
   --ifm-navbar-sidebar-width: min(86vw, 360px);
+  --search-local-modal-width: 640px;
+  --search-local-modal-width-sm: min(92vw, 360px);
+  --search-local-highlight-color: var(--ifm-color-primary);
 }
 
 html[data-theme='dark'] {
@@ -50,6 +53,20 @@ html[data-theme='dark'] {
 .navbar {
   backdrop-filter: blur(12px);
   background: rgba(255, 253, 249, 0.85);
+}
+
+.navbar__search {
+  min-width: min(42vw, 280px);
+}
+
+.navbar__search-input {
+  border-radius: 999px;
+  border: 1px solid var(--site-border-color);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+html[data-theme='dark'] .navbar__search-input {
+  background: rgba(29, 38, 54, 0.88);
 }
 
 html[data-theme='dark'] .navbar {
