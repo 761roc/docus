@@ -1,33 +1,189 @@
 .wrap {
   margin-top: 1rem;
-  border: 1px solid var(--site-border-color);
-  border-radius: 20px;
+  position: relative;
+  border: 1px solid rgba(38, 135, 96, 0.22);
+  border-radius: 24px;
   overflow: hidden;
-  background: var(--site-panel-bg);
+  background:
+    linear-gradient(180deg, rgba(241, 251, 246, 0.98), rgba(239, 247, 244, 0.97)),
+    var(--site-panel-bg);
+  box-shadow:
+    0 22px 38px rgba(20, 38, 70, 0.1),
+    0 10px 22px rgba(38, 135, 96, 0.09),
+    0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+}
+
+.wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at top left, rgba(38, 135, 96, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(96, 176, 135, 0.1), transparent 28%);
+  pointer-events: none;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem;
-  border-bottom: 1px solid var(--site-border-color);
-  background: var(--site-panel-muted-bg);
+  gap: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-bottom: 1px solid rgba(38, 135, 96, 0.15);
+  background:
+    linear-gradient(90deg, rgba(38, 135, 96, 0.12), rgba(38, 135, 96, 0.03) 28%, transparent 58%),
+    var(--site-panel-muted-bg);
   font-size: 0.92rem;
   color: var(--site-text-color);
+  position: relative;
+  z-index: 1;
+}
+
+.macDots {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.dotOrange,
+.dotSand,
+.dotBlue {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.16) inset;
+}
+
+.dotOrange {
+  background: #268760;
+}
+
+.dotSand {
+  background: #87caa7;
+}
+
+.dotBlue {
+  background: #4fb37d;
+}
+
+.title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--site-heading-color);
 }
 
 .badge {
-  padding: 0.16rem 0.5rem;
+  margin-left: auto;
+  padding: 0.22rem 0.64rem;
   border-radius: 999px;
-  background: rgba(207, 95, 31, 0.12);
-  color: var(--ifm-color-primary);
+  background: rgba(38, 135, 96, 0.14);
+  color: #1f7a57;
   font-weight: 600;
+  box-shadow:
+    0 0 0 1px rgba(38, 135, 96, 0.14) inset,
+    0 6px 14px rgba(38, 135, 96, 0.08);
 }
 
-.frame {
-  display: block;
-  width: 100%;
+.body {
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.layout {
   border: 0;
+  border-radius: 16px;
+  overflow: hidden;
   background: transparent;
+  align-items: stretch;
+}
+
+.editor,
+.preview {
+  min-width: 0;
+  height: 100%;
+}
+
+.editor :global(.sp-code-editor),
+.preview :global(.sp-preview-container) {
+  border-radius: 16px;
+}
+
+.preview :global(.sp-preview) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.preview :global(.sp-preview-container) {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  flex-direction: column;
+}
+
+.preview :global(.sp-preview-iframe) {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  color: var(--site-secondary-text);
+  background: var(--site-panel-muted-bg);
+}
+
+@media (max-width: 996px) {
+  .body {
+    padding: 0.85rem;
+  }
+}
+
+:global(html[data-theme='dark']) .wrap {
+  border-color: rgba(83, 191, 145, 0.24);
+  background:
+    linear-gradient(180deg, rgba(24, 37, 31, 0.98), rgba(18, 30, 27, 0.98)),
+    var(--site-panel-bg);
+  box-shadow:
+    0 24px 44px rgba(0, 0, 0, 0.42),
+    0 10px 24px rgba(83, 191, 145, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+:global(html[data-theme='dark']) .wrap::before {
+  background:
+    radial-gradient(circle at top left, rgba(83, 191, 145, 0.15), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(45, 145, 109, 0.12), transparent 28%);
+}
+
+:global(html[data-theme='dark']) .header {
+  border-bottom-color: rgba(83, 191, 145, 0.16);
+  background:
+    linear-gradient(90deg, rgba(83, 191, 145, 0.14), rgba(83, 191, 145, 0.04) 28%, transparent 58%),
+    var(--site-panel-muted-bg);
+}
+
+:global(html[data-theme='dark']) .dotOrange {
+  background: #53bf91;
+}
+
+:global(html[data-theme='dark']) .dotSand {
+  background: #8fd8b4;
+}
+
+:global(html[data-theme='dark']) .dotBlue {
+  background: #2d916d;
+}
+
+:global(html[data-theme='dark']) .badge {
+  background: rgba(83, 191, 145, 0.14);
+  color: #8fd8b4;
+  box-shadow:
+    0 0 0 1px rgba(83, 191, 145, 0.14) inset,
+    0 6px 14px rgba(83, 191, 145, 0.08);
 }

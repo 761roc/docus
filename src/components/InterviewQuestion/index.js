@@ -40,9 +40,17 @@ export function InterviewQuestion({
       </div>
       {code ? (
         <div className={styles.codeWrap}>
-          <CodeBlock language={language} title={codeTitle}>
-            {code}
-          </CodeBlock>
+          <div className={styles.codeHeader}>
+            <div className={styles.macDots} aria-hidden="true">
+              <span className={styles.dotOrange} />
+              <span className={styles.dotSand} />
+              <span className={styles.dotBlue} />
+            </div>
+            <span className={styles.codeTitle}>{codeTitle}</span>
+          </div>
+          <div className={styles.codeBody}>
+            <CodeBlock language={language}>{code}</CodeBlock>
+          </div>
         </div>
       ) : null}
       {runnableCode ? (
