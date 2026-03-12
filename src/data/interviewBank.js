@@ -1,4 +1,5 @@
 import {megaExtraQuestionsBySlug} from './interviewBankExpansion.js';
+import {repoExtraQuestionsBySlug, repoInterviewCategories} from './repoInterviewBank.js';
 
 export const levelMeta = {
   junior: {label: '初级', description: '偏基础概念、常见 API 与标准用法'},
@@ -962,12 +963,13 @@ const extraQuestionsBySlug = {
   ],
 };
 
-export const interviewCategories = baseInterviewCategories.map((category) => ({
+export const interviewCategories = [...baseInterviewCategories, ...repoInterviewCategories].map((category) => ({
   ...category,
   questions: [
     ...category.questions,
     ...(extraQuestionsBySlug[category.slug] ?? []),
     ...(megaExtraQuestionsBySlug[category.slug] ?? []),
+    ...(repoExtraQuestionsBySlug[category.slug] ?? []),
   ],
 }));
 
