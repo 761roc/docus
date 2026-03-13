@@ -109,7 +109,7 @@
 
 .editor :global(.sp-code-editor),
 .preview :global(.sp-preview-container) {
-  border-radius: 16px;
+  /* border-radius: 16px; */
 }
 
 .preview :global(.sp-preview) {

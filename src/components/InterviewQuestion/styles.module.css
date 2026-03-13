@@ -143,8 +143,7 @@
 }
 
 .codeBody {
-  padding: 1rem;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 @media (max-width: 996px) {
@@ -161,7 +160,7 @@
   }
 
   .codeBody {
-    padding: 0.85rem;
+    padding: 0;
   }
 }
 

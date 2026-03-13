@@ -1,6 +1,7 @@
 import React from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import {useColorMode} from '@docusaurus/theme-common';
+import clsx from 'clsx';
 import {StreamLanguage} from '@codemirror/language';
 import {http} from '@codemirror/legacy-modes/mode/http';
 import {shell} from '@codemirror/legacy-modes/mode/shell';
@@ -40,6 +41,21 @@ function getFilePath(language) {
   return LANGUAGE_FILE_MAP[language] || '/snippet.txt';
 }
 
+function createFlatTheme(baseTheme) {
+  return {
+    ...baseTheme,
+    borderRadius: '0',
+    colors: {
+      ...baseTheme.colors,
+      surface1: 'transparent',
+      surface2: 'transparent',
+      surface3: 'transparent',
+      clickable: 'transparent',
+      errorSurface: 'transparent',
+    },
+  };
+}
+
 export function SandpackCodeBlock({
   code,
   title,
@@ -49,9 +65,10 @@ export function SandpackCodeBlock({
 }) {
   const {colorMode} = useColorMode();
   const filePath = getFilePath(language);
+  const isEmbedded = !title;
 
   return (
-    <div className={styles.wrap}>
+    <div className={clsx(styles.wrap, isEmbedded && styles.embedded)}>
       {title ? (
         <div className={styles.header}>
           <div className={styles.macDots} aria-hidden="true">
@@ -64,7 +81,13 @@ export function SandpackCodeBlock({
       ) : null}
       <BrowserOnly fallback={fallback}>
         {() => {
-          const {SandpackCodeEditor, SandpackProvider} = require('@codesandbox/sandpack-react');
+          const {
+            SandpackCodeEditor,
+            SandpackProvider,
+            defaultDark,
+            defaultLight,
+          } = require('@codesandbox/sandpack-react');
+          const editorTheme = createFlatTheme(colorMode === 'dark' ? defaultDark : defaultLight);
 
           return (
             <div className={styles.body}>
@@ -76,7 +99,7 @@ export function SandpackCodeBlock({
                     code,
                   },
                 }}
-                theme={colorMode === 'dark' ? 'dark' : 'light'}
+                theme={editorTheme}
                 options={{
                   activeFile: filePath,
                   autorun: false,
