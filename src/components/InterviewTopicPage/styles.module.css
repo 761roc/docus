@@ -1,3 +1,16 @@
+.summaryCard {
+  margin: 0 0 1.25rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--site-border-color);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.summaryText {
+  margin: 0 0 1rem;
+  color: var(--site-secondary-text);
+}
+
 .toolbar {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -25,7 +38,8 @@
 }
 
 .filterButton,
-.focusChip {
+.focusChip,
+.relatedLink {
   border-radius: 999px;
   border: 1px solid var(--site-border-color);
   background: var(--site-chip-bg);
@@ -52,6 +66,23 @@
 
 .focusChip {
   padding: 0.5rem 0.85rem;
+}
+
+.relatedNav {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.relatedLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.85rem;
+  text-decoration: none;
+}
+
+.relatedLink:hover {
+  border-color: var(--ifm-color-primary-light);
+  text-decoration: none;
 }
 
 @media (max-width: 996px) {

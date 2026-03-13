@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#FFF7ED"/>
+  <rect x="36" y="36" width="1128" height="558" rx="28" fill="url(#paint0_linear_1_2)"/>
+  <rect x="76" y="88" width="420" height="454" rx="28" fill="#FFFFFF" fill-opacity="0.78"/>
+  <rect x="104" y="124" width="152" height="36" rx="18" fill="#FDE68A"/>
+  <text x="104" y="149" fill="#7C2D12" font-family="Arial, sans-serif" font-size="18" font-weight="700">Frontend Interview</text>
+  <text x="104" y="224" fill="#111827" font-family="Arial, sans-serif" font-size="54" font-weight="700">前端面试题库</text>
+  <text x="104" y="278" fill="#374151" font-family="Arial, sans-serif" font-size="28">JavaScript / React / Vue / TypeScript</text>
+  <text x="104" y="322" fill="#374151" font-family="Arial, sans-serif" font-size="28">答案、示例代码与专题推荐</text>
+  <rect x="104" y="376" width="124" height="44" rx="22" fill="#FFEDD5"/>
+  <rect x="244" y="376" width="124" height="44" rx="22" fill="#DBEAFE"/>
+  <rect x="384" y="376" width="84" height="44" rx="22" fill="#DCFCE7"/>
+  <text x="136" y="404" fill="#9A3412" font-family="Arial, sans-serif" font-size="20" font-weight="700">题库分类</text>
+  <text x="279" y="404" fill="#1D4ED8" font-family="Arial, sans-serif" font-size="20" font-weight="700">高频题</text>
+  <text x="410" y="404" fill="#15803D" font-family="Arial, sans-serif" font-size="20" font-weight="700">SEO</text>
+  <rect x="544" y="112" width="582" height="110" rx="24" fill="#FFFFFF" fill-opacity="0.72"/>
+  <rect x="544" y="246" width="278" height="132" rx="24" fill="#FFFFFF" fill-opacity="0.72"/>
+  <rect x="848" y="246" width="278" height="132" rx="24" fill="#FFFFFF" fill-opacity="0.72"/>
+  <rect x="544" y="404" width="582" height="138" rx="24" fill="#FFFFFF" fill-opacity="0.72"/>
+  <text x="580" y="162" fill="#111827" font-family="Arial, sans-serif" font-size="32" font-weight="700">覆盖主流前端面试方向</text>
+  <text x="580" y="205" fill="#374151" font-family="Arial, sans-serif" font-size="24">JavaScript、React、Vue、性能优化、工程化、系统设计</text>
+  <text x="576" y="302" fill="#111827" font-family="Arial, sans-serif" font-size="26" font-weight="700">可索引静态内容</text>
+  <text x="576" y="340" fill="#374151" font-family="Arial, sans-serif" font-size="20">分类页、专题页、内链与结构化数据</text>
+  <text x="880" y="302" fill="#111827" font-family="Arial, sans-serif" font-size="26" font-weight="700">Google 收录友好</text>
+  <text x="880" y="340" fill="#374151" font-family="Arial, sans-serif" font-size="20">Sitemap、Robots、清晰元信息</text>
+  <text x="580" y="458" fill="#111827" font-family="Arial, sans-serif" font-size="30" font-weight="700">mianshi.iupeng.top</text>
+  <text x="580" y="502" fill="#374151" font-family="Arial, sans-serif" font-size="22">面向中文前端开发者的面试知识库</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="38" y1="48" x2="1142" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FED7AA"/>
+      <stop offset="1" stop-color="#BFDBFE"/>
+    </linearGradient>
+  </defs>
+</svg>

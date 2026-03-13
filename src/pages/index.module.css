@@ -36,6 +36,13 @@
   gap: 1rem;
 }
 
+.secondarySection {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .card {
   display: block;
   padding: 1.25rem;
@@ -63,6 +70,46 @@
   color: var(--site-secondary-text);
 }
 
+.linkSection {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: 22px;
+  border: 1px solid var(--site-border-color);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: var(--site-card-shadow);
+}
+
+.linkSection h2 {
+  margin-bottom: 0.5rem;
+}
+
+.linkSection p {
+  margin-bottom: 0.9rem;
+  color: var(--site-secondary-text);
+}
+
+.linkList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.linkList a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--site-border-color);
+  background: var(--site-chip-bg);
+  color: var(--site-text-color);
+  text-decoration: none;
+}
+
+.linkList a:hover {
+  border-color: rgba(207, 95, 31, 0.34);
+  text-decoration: none;
+}
+
 @media (max-width: 996px) {
   .hero {
     grid-template-columns: 1fr;
@@ -71,5 +118,9 @@
 
   .panel {
     padding: 0;
+  }
+
+  .secondarySection {
+    grid-template-columns: 1fr;
   }
 }

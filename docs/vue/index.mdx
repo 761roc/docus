@@ -1,11 +1,28 @@
-title: Vue 专题总览
+---
+title: Vue 专题总览与学习路径
 slug: /vue
 sidebar_position: 1
+description: Vue 专题总览页，汇总 Vue 常用知识点、Composition API、常见坑与面试复习路径，适合中文前端开发者快速查阅。
 ---
+
+import {SeoHead} from '@site/src/components/SeoHead';
+
+<SeoHead
+  title="Vue 专题总览与学习路径"
+  description="Vue 专题总览页，汇总 Vue 常用知识点、Composition API、常见坑与面试复习路径，适合中文前端开发者快速查阅。"
+  path="/docs/vue"
+  type="Article"
+  keywords={['Vue 面试题', 'Vue 学习路径', 'Vue Composition API', 'Vue 响应式']}
+  breadcrumbs={[
+    {name: '首页', path: '/'},
+    {name: '题库', path: '/docs/intro'},
+    {name: 'Vue 专题', path: '/docs/vue'},
+  ]}
+/>
 
 # Vue 专题总览
 
-这个专区聚焦 Vue 的实战知识：
+这个专区聚焦 Vue 的实战知识，适合在准备 Vue 面试、补齐 Composition API 认知，或快速复盘响应式系统时使用。页面会把 Vue 面试里常见的知识点、API 用法和高频踩坑拆成三个子专题，便于搜索引擎和读者快速定位到具体内容。
 
 - 常用知识点：响应式、组件通信、路由与状态管理。
 - API 用法：Composition API 与生命周期的高频写法。
@@ -16,3 +33,10 @@ sidebar_position: 1
 1. 先看「常用知识点」，建立整体认知。
 2. 再看「API 用法」，对照日常开发代码。
 3. 最后看「注意事项」，用于代码审查和上线前自检。
+
+## 专题入口
+
+- [Vue 常用知识点](/docs/vue/knowledge-points)
+- [Vue API 用法速查](/docs/vue/api-usage)
+- [Vue 注意事项与常见坑](/docs/vue/cautions)
+- [Vue 面试题与答案](/docs/categories/vue)

@@ -2,9 +2,28 @@
 title: Vue 注意事项与常见坑
 slug: /vue/cautions
 sidebar_position: 4
+description: 汇总 Vue 项目与面试中的常见坑，包括响应式丢失、watch 监听范围、列表 key、副作用清理和 composables 拆分边界。
 ---
 
+import {SeoHead} from '@site/src/components/SeoHead';
+
+<SeoHead
+  title="Vue 注意事项与常见坑"
+  description="汇总 Vue 项目与面试中的常见坑，包括响应式丢失、watch 监听范围、列表 key、副作用清理和 composables 拆分边界。"
+  path="/docs/vue/cautions"
+  type="Article"
+  keywords={['Vue 常见坑', 'Vue 面试题', 'Vue 响应式丢失', 'Vue watch']}
+  breadcrumbs={[
+    {name: '首页', path: '/'},
+    {name: '题库', path: '/docs/intro'},
+    {name: 'Vue 专题', path: '/docs/vue'},
+    {name: 'Vue 注意事项与常见坑', path: '/docs/vue/cautions'},
+  ]}
+/>
+
 # Vue 注意事项与常见坑
+
+这页聚焦 Vue 真实项目和面试问答里容易被忽略的细节，尤其适合在复盘响应式系统、组件更新和副作用处理时对照自查。内容更偏工程实践，而不是单纯 API 背诵。
 
 ## 1. 解构导致响应式丢失
 
@@ -30,3 +49,9 @@ sidebar_position: 4
 ## 6. 组合式逻辑缺乏边界
 
 `composables` 应按单一职责拆分，避免一个函数承担所有业务。
+
+## 继续阅读
+
+- [Vue 常用知识点](/docs/vue/knowledge-points)
+- [Vue API 用法速查](/docs/vue/api-usage)
+- [Vue 面试题与答案](/docs/categories/vue)

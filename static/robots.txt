@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mianshi.iupeng.top/sitemap.xml

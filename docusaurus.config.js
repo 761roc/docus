@@ -3,7 +3,8 @@ const { themes } = require("prism-react-renderer");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "前端面试题库",
-  tagline: "按主题分类的前端面试题、答案与可运行示例",
+  tagline: "JavaScript、React、Vue、工程化等前端面试题与答案",
+  titleDelimiter: "|",
   url: "https://mianshi.iupeng.top",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -57,6 +58,14 @@ const config = {
     ],
   ],
   themeConfig: {
+    image: "img/seo-cover.svg",
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "前端面试题,前端面试题库,JavaScript面试题,React面试题,Vue面试题,TypeScript面试题,前端工程化,前端性能优化",
+      },
+    ],
     docs: {
       sidebar: {
         hideable: true,

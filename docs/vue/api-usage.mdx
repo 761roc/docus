@@ -2,9 +2,28 @@
 title: Vue API 用法速查
 slug: /vue/api-usage
 sidebar_position: 3
+description: Vue Composition API 与常用生命周期速查页，覆盖 ref、reactive、computed、watch 等高频 API 示例与面试复盘重点。
 ---
 
+import {SeoHead} from '@site/src/components/SeoHead';
+
+<SeoHead
+  title="Vue API 用法速查"
+  description="Vue Composition API 与常用生命周期速查页，覆盖 ref、reactive、computed、watch 等高频 API 示例与面试复盘重点。"
+  path="/docs/vue/api-usage"
+  type="Article"
+  keywords={['Vue API', 'Composition API', 'ref reactive computed watch', 'Vue 面试题']}
+  breadcrumbs={[
+    {name: '首页', path: '/'},
+    {name: '题库', path: '/docs/intro'},
+    {name: 'Vue 专题', path: '/docs/vue'},
+    {name: 'Vue API 用法速查', path: '/docs/vue/api-usage'},
+  ]}
+/>
+
 # Vue API 用法速查
+
+这页适合在 Vue 面试前快速查阅常用 API 写法，尤其是 `ref`、`reactive`、`computed`、`watch` 和生命周期钩子的基础用法。你可以把它当作 Vue Composition API 的最小复盘清单。
 
 ## Composition API
 
@@ -57,3 +76,9 @@ watch(keyword, async (val) => {
 - `onMounted`：DOM 挂载后执行。
 - `onBeforeUnmount`：组件销毁前清理定时器、监听器。
 - `onUpdated`：响应式更新后的钩子（谨慎使用）。
+
+## 继续阅读
+
+- [Vue 常用知识点](/docs/vue/knowledge-points)
+- [Vue 注意事项与常见坑](/docs/vue/cautions)
+- [Vue 面试题与答案](/docs/categories/vue)

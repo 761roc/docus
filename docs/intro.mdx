@@ -1,11 +1,25 @@
 ---
 id: intro
-title: 前端面试题库说明
+title: 前端面试题库说明与使用指南
 slug: /intro
 sidebar_position: 1
+description: 前端面试题库使用指南，覆盖 JavaScript、React、Vue、TypeScript、性能优化与工程化等高频分类入口与阅读建议。
 ---
 
+import {SeoHead} from '@site/src/components/SeoHead';
 import {TopicHero} from '@site/src/components/TopicHero';
+
+<SeoHead
+  title="前端面试题库说明与使用指南"
+  description="前端面试题库使用指南，覆盖 JavaScript、React、Vue、TypeScript、性能优化与工程化等高频分类入口与阅读建议。"
+  path="/docs/intro"
+  type="Article"
+  keywords={['前端面试题库', '前端面试题', '前端面试指南', 'JavaScript 面试题', 'React 面试题']}
+  breadcrumbs={[
+    {name: '首页', path: '/'},
+    {name: '题库说明', path: '/docs/intro'},
+  ]}
+/>
 
 <TopicHero
   eyebrow="Frontend Interview Handbook"
@@ -20,10 +34,31 @@ import {TopicHero} from '@site/src/components/TopicHero';
 
 ## 如何使用
 
+- 如果你是第一次进入题库，建议先看本页，再按分类进入对应主题页。
 - 通过左侧分类切换不同知识域。
 - 每个问题块都包含：考察重点、标准答案、代码示例。
 - 每个分类页顶部都支持 `全部 / 初级 / 中级 / 高级` 难度筛选。
 - 带有运行区域的题目会在文档内部渲染示例，适合边看边验证。
+
+## 热门分类入口
+
+- [JavaScript 面试题与答案](/docs/categories/javascript)
+- [React 面试题与答案](/docs/categories/react)
+- [Vue 面试题与答案](/docs/categories/vue)
+- [TypeScript 面试题与答案](/docs/categories/typescript)
+- [前端性能优化面试题与答案](/docs/categories/performance)
+- [前端工程化面试题与答案](/docs/categories/engineering)
+
+## 高频搜索主题
+
+这套题库面向中文前端开发者，内容组织方式尽量贴近 Google 和真实面试场景中的搜索表达。你可以直接从“JavaScript 面试题与答案”“React 面试题汇总”“Vue 面试题”“前端性能优化面试题”“前端工程化面试题”等入口进入，再根据难度和专题关系继续深入。
+
+## 相关专题
+
+- [Vue 专题总览](/docs/vue)
+- [Vue 常用知识点](/docs/vue/knowledge-points)
+- [Vue API 用法速查](/docs/vue/api-usage)
+- [Vue 注意事项与常见坑](/docs/vue/cautions)
 
 ## 内容组织原则
 
